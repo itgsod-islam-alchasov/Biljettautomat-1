@@ -4,7 +4,7 @@ def ask_age()
   return age.to_i
 end
 
-def ticket_price(age:)
+def ticket_price(age:ask_age)
 
   if age < 18
     return "10kr"
@@ -16,4 +16,4 @@ def ticket_price(age:)
 
 end
 
-puts ticket_price(age:ask_age)
+puts ticket_price()
