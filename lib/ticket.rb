@@ -1,6 +1,5 @@
 def ask_age()
-  p "Enter your age"
-
+  puts "Enter your age"
   age = gets
   return age.to_i
 end
@@ -8,13 +7,13 @@ end
 def ticket_price(age:)
 
   if age < 18
-    p "10kr"
+    return "10kr"
   elsif age >=18 && age <= 64
-    p "20kr"
+    return "20kr"
   else
-    p "15kr"
+    return "15kr"
   end
 
 end
 
-ticket_price(age:ask_age)
+puts ticket_price(age:ask_age)
