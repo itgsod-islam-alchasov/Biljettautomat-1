@@ -11,10 +11,8 @@ def ticket_price(age:)
     p "10kr"
   elsif age >=18 && age <= 64
     p "20kr"
-  elsif age >= 65
-    p "15kr"
   else
-    return "Error"
+    p "15kr"
   end
 
 end
